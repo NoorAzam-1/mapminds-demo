@@ -66,7 +66,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="section-pad bg-paper">
       <div className="site-container">
-        <div className="mx-auto mb-12 max-w-2xl text-center">
+        <div className="mx-auto mb-12 max-w-3xl text-center">
           <div className="eyebrow mb-4">
             <Icon name="send" className="h-3.5 w-3.5" />
             Contact Us
