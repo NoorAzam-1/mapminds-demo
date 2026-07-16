@@ -47,7 +47,7 @@ export default function LeadForm() {
 
   return (
     <div
-      className={`lead-overlay fixed inset-0 z-[70] flex items-center justify-center bg-ink-950/65 p-4 backdrop-blur-sm ${
+      className={`lead-overlay fixed inset-0 z-50 flex items-center justify-center bg-ink-950/65 p-4 backdrop-blur-sm ${
         open ? 'active' : ''
       }`}
       onClick={(event) => event.target === event.currentTarget && setOpen(false)}
