@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Icon from '@/components/Icon';
+import Link from 'next/link';
 
 const states = [
   ['up', 'Uttar Pradesh'],
@@ -110,7 +111,7 @@ export default function HeroSection() {
                 Get Free Consultation
                 <Icon name="arrowRight" className="h-4 w-4" />
               </button>
-              <a
+              <Link
                 href="https://wa.me/919999999999?text=Hi%20MapMinds%2C%20I%20need%20help%20with%20NEET%20counselling"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -118,7 +119,7 @@ export default function HeroSection() {
               >
                 <Icon name="messageCircle" className="h-4 w-4" />
                 Chat on WhatsApp
-              </a>
+              </Link>
             </div>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
