@@ -1,16 +1,16 @@
 import Icon from '@/components/Icon';
+import Link from 'next/link';
 
 const footerLinks = {
   quick: [
-    { label: 'Home', href: '#home' },
     { label: 'About Us', href: '#about' },
     { label: 'Student Stories', href: '#testimonials' },
     { label: 'Contact', href: '#contact' },
   ],
   legal: [
-    { label: 'Privacy Policy', href: '#' },
-    { label: 'Terms of Service', href: '#' },
-    { label: 'Refund Policy', href: '#' },
+    { label: 'Privacy Policy', href: '/privacy_policy' },
+    { label: 'Terms of Service', href: '/terms_and_condition' },
+    { label: 'Refund Policy', href: '/refund_policy' },
   ],
 };
 
@@ -35,12 +35,12 @@ export default function Footer() {
                 Map<span className="text-brand-300">Minds</span>
               </span>
             </div>
-            <p className="max-w-sm text-sm leading-7 text-white/60">
+            <p className="max-w-sm text-sm leading-5 6ext-white/60">
               NEET counselling and medical admission guidance for students who need a clear route from score to seat.
             </p>
-            <div className="mt-5 flex items-center gap-2">
+            <div className="mt-3 flex items-center gap-2">
               {socialLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
                   href={link.href}
                   target={link.href !== '#' ? '_blank' : undefined}
@@ -49,7 +49,7 @@ export default function Footer() {
                   className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/10 text-white/75 transition hover:bg-brand-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40"
                 >
                   <Icon name={link.icon} className="h-4 w-4" />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -58,12 +58,12 @@ export default function Footer() {
             <h4 className="mb-4 text-xs font-black uppercase tracking-[0.16em] text-white/70">
               Quick Links
             </h4>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               {footerLinks.quick.map((link) => (
                 <li key={link.href}>
-                  <a className="text-sm font-medium text-white/60 transition hover:text-white" href={link.href}>
+                  <Link className="text-sm font-medium text-white/60 transition hover:text-white" href={link.href}>
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -73,12 +73,12 @@ export default function Footer() {
             <h4 className="mb-4 text-xs font-black uppercase tracking-[0.16em] text-white/70">
               Legal
             </h4>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               {footerLinks.legal.map((link) => (
                 <li key={link.label}>
-                  <a className="text-sm font-medium text-white/60 transition hover:text-white" href={link.href}>
+                  <Link className="text-sm font-medium text-white/60 transition hover:text-white" href={link.href}>
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -88,7 +88,7 @@ export default function Footer() {
             <h4 className="mb-4 text-xs font-black uppercase tracking-[0.16em] text-white/70">
               Contact
             </h4>
-            <div className="space-y-3 text-sm text-white/60">
+            <div className="space-y-2 text-sm text-white/60">
               <p className="flex items-start gap-3">
                 <Icon name="phone" className="mt-0.5 h-4 w-4 shrink-0 text-brand-300" />
                 <span>+91 99999 99999</span>
