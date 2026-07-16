@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import Icon from '@/components/Icon';
+import Link from 'next/link';
 
 export default function CTABanner() {
   useEffect(() => {
@@ -47,7 +48,7 @@ export default function CTABanner() {
               Get Free Consultation
               <Icon name="arrowRight" className="h-4 w-4" />
             </button>
-            <a
+            <Link
               href="https://wa.me/919999999999?text=Hi%20MapMinds%2C%20I%20need%20NEET%20counselling%20help"
               target="_blank"
               rel="noopener noreferrer"
@@ -55,7 +56,7 @@ export default function CTABanner() {
             >
               <Icon name="messageCircle" className="h-4 w-4" />
               Chat on WhatsApp
-            </a>
+            </Link>
           </div>
         </div>
       </div>
