@@ -5,8 +5,8 @@ import Icon from '@/components/Icon';
 
 const reviews = [
   {
-    name: 'Priya Sharma',
-    tag: 'MBBS, UP',
+    name: 'Noor Azam',
+    tag: 'MBBS, Bihar',
     initials: 'PS',
     text: 'I scored 412 and thought MBBS was out of reach. MapMinds helped us compare state quota and private college options with a clear fee plan.',
   },
@@ -18,7 +18,7 @@ const reviews = [
   },
   {
     name: 'Anita Kumari',
-    tag: 'BDS, Bihar',
+    tag: 'BDS, Delhi',
     initials: 'AK',
     text: 'Their college shortlist was practical. I did not waste choices on unrealistic seats and got a BDS option that matched my budget.',
   },
@@ -76,7 +76,7 @@ export default function Testimonials() {
                 </div>
                 <div>
                   <h3 className="text-sm font-black text-ink-950">{review.name}</h3>
-                  <p className="mt-0.5 text-xs font-semibold uppercase tracking-[0.1em] text-ink-400">
+                  <p className="mt-0.5 text-xs font-semibold uppercase tracking-widest text-ink-400">
                     {review.tag}
                   </p>
                 </div>
