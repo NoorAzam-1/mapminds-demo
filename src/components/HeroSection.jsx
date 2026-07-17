@@ -112,7 +112,7 @@ export default function HeroSection() {
                 <Icon name="arrowRight" className="h-4 w-4" />
               </button>
               <Link
-                href="https://wa.me/919999999999?text=Hi%20MapMinds%2C%20I%20need%20help%20with%20NEET%20counselling"
+                href="https://wa.me/919590417660?text=Hi%20MapMinds%2C%20I%20need%20help%20with%20NEET%20counselling"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"
