@@ -4,9 +4,9 @@ import { useEffect, useRef } from 'react';
 import Icon from '@/components/Icon';
 
 const stats = [
-  { target: 500, suffix: '+', label: 'Students Counseled', icon: 'users' },
+  { target: 5000, suffix: '+', label: 'Students Counseled', icon: 'users' },
   { target: 98, suffix: '%', label: 'Admission Success', icon: 'check' },
-  { target: 5, suffix: '+', label: 'Years Experience', icon: 'clock' },
+  { target: 20, suffix: '+', label: 'Years Experience', icon: 'clock' },
   { target: 150, suffix: '+', label: 'College Routes', icon: 'graduation' },
 ];
 
