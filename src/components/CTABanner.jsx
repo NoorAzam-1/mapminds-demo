@@ -49,7 +49,7 @@ export default function CTABanner() {
               <Icon name="arrowRight" className="h-4 w-4" />
             </button>
             <Link
-              href="https://wa.me/919999999999?text=Hi%20MapMinds%2C%20I%20need%20NEET%20counselling%20help"
+              href="https://wa.me/919590417660?text=Hi%20MapMinds%2C%20I%20need%20NEET%20counselling%20help"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/40"
