@@ -1,24 +1,28 @@
-import Icon from '@/components/Icon';
-import Link from 'next/link';
+import Icon from "@/components/Icon";
+import Link from "next/link";
 
 const footerLinks = {
   quick: [
-    { label: 'About Us', href: '#about' },
-    { label: 'Student Stories', href: '#testimonials' },
-    { label: 'Contact', href: '#contact' },
+    { label: "About Us", href: "#about" },
+    { label: "Student Stories", href: "#testimonials" },
+    { label: "Contact", href: "#contact" },
   ],
   legal: [
-    { label: 'Privacy Policy', href: '/privacy_policy' },
-    { label: 'Terms of Service', href: '/terms_and_condition' },
-    { label: 'Refund Policy', href: '/refund_policy' },
+    { label: "Privacy Policy", href: "/privacy_policy" },
+    { label: "Terms of Service", href: "/terms_and_condition" },
+    { label: "Refund Policy", href: "/refund_policy" },
   ],
 };
 
 const socialLinks = [
-  { label: 'Instagram', icon: 'spark', href: '#' },
-  { label: 'YouTube', icon: 'chart', href: '#' },
-  { label: 'Facebook', icon: 'users', href: '#' },
-  { label: 'WhatsApp', icon: 'messageCircle', href: 'https://wa.me/919999999999' },
+  { label: "Instagram", icon: "spark", href: "#" },
+  { label: "YouTube", icon: "chart", href: "#" },
+  { label: "Facebook", icon: "users", href: "#" },
+  {
+    label: "WhatsApp",
+    icon: "messageCircle",
+    href: "https://wa.me/9590417660",
+  },
 ];
 
 export default function Footer() {
@@ -36,15 +40,16 @@ export default function Footer() {
               </span>
             </div>
             <p className="max-w-sm text-sm leading-5 6ext-white/60">
-              NEET counselling and medical admission guidance for students who need a clear route from score to seat.
+              NEET counselling and medical admission guidance for students who
+              need a clear route from score to seat.
             </p>
             <div className="mt-3 flex items-center gap-2">
               {socialLinks.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
-                  target={link.href !== '#' ? '_blank' : undefined}
-                  rel={link.href !== '#' ? 'noopener noreferrer' : undefined}
+                  target={link.href !== "#" ? "_blank" : undefined}
+                  rel={link.href !== "#" ? "noopener noreferrer" : undefined}
                   aria-label={link.label}
                   className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/10 text-white/75 transition hover:bg-brand-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40"
                 >
@@ -61,7 +66,10 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.quick.map((link) => (
                 <li key={link.href}>
-                  <Link className="text-sm font-medium text-white/60 transition hover:text-white" href={link.href}>
+                  <Link
+                    className="text-sm font-medium text-white/60 transition hover:text-white"
+                    href={link.href}
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -76,7 +84,10 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.legal.map((link) => (
                 <li key={link.label}>
-                  <Link className="text-sm font-medium text-white/60 transition hover:text-white" href={link.href}>
+                  <Link
+                    className="text-sm font-medium text-white/60 transition hover:text-white"
+                    href={link.href}
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -90,16 +101,28 @@ export default function Footer() {
             </h4>
             <div className="space-y-2 text-sm text-white/60">
               <p className="flex items-start gap-3">
-                <Icon name="phone" className="mt-0.5 h-4 w-4 shrink-0 text-brand-300" />
-                <span>+91 99999 99999</span>
+                <Icon
+                  name="phone"
+                  className="mt-0.5 h-4 w-4 shrink-0 text-brand-300"
+                />
+                <span>+91 9590417660</span>
               </p>
               <p className="flex items-start gap-3">
-                <Icon name="mail" className="mt-0.5 h-4 w-4 shrink-0 text-brand-300" />
-                <span>hello@mapminds.in</span>
+                <Icon
+                  name="mail"
+                  className="mt-0.5 h-4 w-4 shrink-0 text-brand-300"
+                />
+                <span>mapminds.digital@gmail.com</span>
               </p>
               <p className="flex items-start gap-3">
-                <Icon name="mapPin" className="mt-0.5 h-4 w-4 shrink-0 text-brand-300" />
-                <span>MapMinds Office, Sector 15, Noida, UP - 201301</span>
+                <Icon
+                  name="mapPin"
+                  className="mt-0.5 h-4 w-4 shrink-0 text-brand-300"
+                />
+                <span>
+                  Chandra complex Baglur main road at BSF ,STS
+                  stop Landmark:Reva University Bangalore-560063
+                </span>
               </p>
             </div>
           </div>
