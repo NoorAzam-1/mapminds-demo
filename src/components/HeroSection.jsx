@@ -124,7 +124,7 @@ export default function HeroSection() {
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
               {[
-                ['500+', 'Students counselled'],
+                ['5000+', 'Students counselled'],
                 ['150+', 'College routes tracked'],
                 ['1-on-1', 'Expert strategy call'],
               ].map(([value, label]) => (
