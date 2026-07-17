@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Icon from "@/components/Icon";
 import { FaInstagram, FaYoutube, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 const footerLinks = {
@@ -51,23 +52,26 @@ export default function Footer() {
                 Map<span className="text-brand-300">Minds</span>
               </span>
             </div>
-            <p className="max-w-sm text-sm leading-5 6ext-white/60">
+            <p className="max-w-sm text-sm leading-5 text-white/60">
               NEET counselling and medical admission guidance for students who
               need a clear route from score to seat.
             </p>
             <div className="mt-3 flex items-center gap-2">
-              {socialLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  target={link.href !== "#" ? "_blank" : undefined}
-                  rel={link.href !== "#" ? "noopener noreferrer" : undefined}
-                  aria-label={link.label}
-                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/10 text-white/75 transition hover:bg-brand-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40"
-                >
-                  <Icon name={link.icon} className="h-4 w-4" />
-                </Link>
-              ))}
+              {socialLinks.map((link) => {
+                const SocialIcon = link.icon;
+                return (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    target={link.href !== "#" ? "_blank" : undefined}
+                    rel={link.href !== "#" ? "noopener noreferrer" : undefined}
+                    aria-label={link.label}
+                    className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/10 text-white/75 transition hover:bg-brand-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40"
+                  >
+                    <SocialIcon className="h-4 w-4" />
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
@@ -133,7 +137,8 @@ export default function Footer() {
                 />
                 <span>
                   Chandra complex Baglur main road at BSF ,STS stop
-                  Landmark:Reva University Bangalore-560063
+                  <br />
+                  <span className="text-xs text-white/50">Landmark: Reva University Bangalore-560063</span>
                 </span>
               </p>
             </div>
