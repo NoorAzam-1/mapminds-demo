@@ -7,14 +7,14 @@ const contactCards = [
   {
     icon: 'phone',
     title: 'Call Us',
-    link: 'tel:+919999999999',
-    linkText: '+91 99999 99999',
+    link: 'tel:+919590417660',
+    linkText: '+91 9590417660',
     sub: 'Mon-Sat, 9 AM - 8 PM',
   },
   {
     icon: 'messageCircle',
     title: 'WhatsApp',
-    link: 'https://wa.me/919999999999',
+    link: 'https://wa.me/919590417660',
     linkText: 'Start chat',
     sub: 'Fast response for counselling queries',
     external: true,
@@ -22,13 +22,13 @@ const contactCards = [
   {
     icon: 'mapPin',
     title: 'Office Address',
-    text: 'MapMinds Office, Sector 15, Noida, UP - 201301',
+    text: 'Chandra complex Baglur main road at BSF ,STS stop Landmark:Reva University Bangalore-560063',
   },
   {
     icon: 'mail',
     title: 'Email',
-    link: 'mailto:hello@mapminds.in',
-    linkText: 'hello@mapminds.in',
+    link: 'mailto:mapminds.digital@gmail.com',
+    linkText: 'mapminds.digital@gmail.com',
   },
 ];
 
@@ -204,7 +204,7 @@ export default function ContactSection() {
 
         <div className="contact-anim slide-up surface mt-8 overflow-hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1!2d77.31!3d28.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM0JzQ4LjAiTiA3N8KwMTgnMzYuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.7422379871336!2d77.63151803037873!3d13.11550896230651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae19727b62b0e7%3A0x4819d7f29a210c6c!2sReva%20College!5e0!3m2!1sen!2sin!4v1784269010799!5m2!1sen!2sin"
             width="100%"
             height="320"
             className="block"
