@@ -1,5 +1,5 @@
-import Icon from "@/components/Icon";
 import Link from "next/link";
+import { FaInstagram, FaYoutube, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 const footerLinks = {
   quick: [
@@ -15,13 +15,25 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { label: "Instagram", icon: "spark", href: "#" },
-  { label: "YouTube", icon: "chart", href: "#" },
-  { label: "Facebook", icon: "users", href: "#" },
+  {
+    label: "Instagram",
+    icon: FaInstagram,
+    href: "https://www.instagram.com/mapminds_consultant",
+  },
+  {
+    label: "YouTube",
+    icon: FaYoutube,
+    href: "https://www.youtube.com/@MapMinds-MENTOR",
+  },
+  {
+    label: "Facebook",
+    icon: FaFacebook,
+    href: "https://facebook.com",
+  },
   {
     label: "WhatsApp",
-    icon: "messageCircle",
-    href: "https://wa.me/9590417660",
+    icon: FaWhatsapp,
+    href: "https://wa.me/919590417660",
   },
 ];
 
@@ -120,8 +132,8 @@ export default function Footer() {
                   className="mt-0.5 h-4 w-4 shrink-0 text-brand-300"
                 />
                 <span>
-                  Chandra complex Baglur main road at BSF ,STS
-                  stop Landmark:Reva University Bangalore-560063
+                  Chandra complex Baglur main road at BSF ,STS stop
+                  Landmark:Reva University Bangalore-560063
                 </span>
               </p>
             </div>
