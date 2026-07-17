@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Icon from "@/components/Icon";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -43,15 +44,16 @@ export default function Navbar() {
         >
           <Link
             href="/"
-            className="flex min-w-0 items-center gap-2 rounded-lg pr-2 focus:outline-none focus:ring-2 focus:ring-brand-200"
+            className="flex min-w-20 w-32 h-16"
             onClick={() => setMenuOpen(false)}
           >
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-700 text-white shadow-sm">
-              <Icon name="compass" className="h-5 w-5" />
-            </span>
-            <span className="text-lg font-black tracking-tight text-ink-950">
-              Map<span className="text-brand-700">Minds</span>
-            </span>
+            <Image
+              src="/logo.png"
+              alt="logo"
+              height={140}
+              width={140}
+              className="object-cover "
+            />
           </Link>
 
           <div className="hidden items-center gap-1 lg:flex">
